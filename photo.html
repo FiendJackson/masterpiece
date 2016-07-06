@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header  page-header--short">
       <nav class="main-nav  main-nav--open">
         <div class="main-nav__wrapper">
           <div class="main-nav__header">
@@ -75,307 +75,238 @@
           </div>
         </div>
       </nav>
-      <section class="promo">
+      <section class="promo  promo--short">
         <div class="promo__wrapper">
-          <div class="promo__block">
-            <h1 class="promo__title  promo__title--hidden">Взгляните на жизнь иначе!</h1>
-            <div class="download">
-              <a href="#" class="download__button">Скачать приложение</a>
-              <ul class="download__list">
-                <li class="download__item">
-                  <a class="download__link" href="#">
-                    <img class="download__image" src="img/logo-apple.svg" alt="apple" title="apple">
-                  </a>
-                </li>
-                <li class="download__item">
-                  <a class="download__link" href="#">
-                    <img class="download__image" src="img/logo-android.svg" alt="android" title="android">
-                  </a>
-                </li>
-                <li class="download__item">
-                  <a class="download__link" href="#">
-                      <img class="download__image" src="img/logo-microsoft.svg" alt="microsoft" title="microsoft">
-                  </a>
-                </li>
-              </ul>
-              <p class="download__description">
-                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-              </p>
-            </div>
+          <div class="promo__header  promo__header--short">
+            <h1 class="promo__title  promo__title--short">Фотографии<br>пользователей</h1>
           </div>
         </div>
       </section>
     </header>
     <main class="page-body">
-      <section class="advantages">
-        <div class="advantages__header">
-          <div class="advantages__wrapper">
-            <p class="advantages__title">
-              Устали от серости мегаполиса?
+      <p class="page-body__description  page-body__description--gallery">
+      Взгляните на фотографии, которые выкладывают пользователи!<br class="page-body__br">
+      Видите, как не хватает ваших?
+      </p>
+      <section class="gallery">
+        <div class="gallery__item  gallery__item--panorama">
+          <picture class="gallery__picture  gallery__picture--panorama">
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="gallery__image  gallery__image--fullwidth" src="img/panorama-mobile@1x.jpg"
+            srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x"
+            title="Панорама" alt="Панорама">
+          </picture>
+          <div class="gallery__info  gallery__info--panorama">
+            <p class="gallery__author">
+              <b class="gallery__name">Анна</b>
+              <span class="gallery__date">(5 минут назад)</span>
             </p>
-            <p class="advantages__title  advantages__title--last">
-              Нам есть, что вам предложить!
+            <p class="gallery__message  gallery__message--panorama">
+              Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!
             </p>
+            <div class="gallery__like-block  gallery__like-block--panorama">
+              <a class="gallery__like" href="#">
+                <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
+              </a>
+              <span class="gallery__like-text">нравится:</span>
+              <span class="gallery__like-count">215</span>
+            </div>
           </div>
         </div>
-        <div class="advantages__body">
-          <div class="advantages__wrapper  advantages__screenshots">
-            <div class="advantages__screen  advantages__screen--main">
-              <picture class="advantages__picture">
-                <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
-                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
-                <img class="advantages__image" src="img/iphone-screen-mobile@1x.png"
-                srcset="img/iphone-screen-mobile@1x.png 1x, img/iphone-screen-mobile@2x.png 2x"
-                alt="iphone screen" title="iPhone screen">
-              </picture>
-            </div>
-            <div class="advantages__screen">
-              <picture class="advantages__picture">
-                <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
-                <source media="(min-width: 660px)" srcset="img/iphone-screen-2-tablet@1x.png 1x, img/iphone-screen-2-tablet@2x.png 2x">
-                <img class="advantages__image" src="img/iphone-screen-mobile@1x.png"
-                srcset="img/iphone-screen-mobile@1x.png 1x, img/iphone-screen-mobile@2x.png 2x"
-                alt="iphone screen" width="292" height="302" title="iPhone screen">
-              </picture>
-            </div>
-            <div class="advantages__screen">
-              <picture class="advantages__picture">
-                <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
-                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
-                <img class="advantages__image" src="img/iphone-screen-mobile@1x.png"
-                srcset="img/iphone-screen-mobile@1x.png 1x, img/iphone-screen-mobile@2x.png 2x"
-                alt="iphone screen" width="292" height="302" title="iPhone screen">
-              </picture>
-            </div>
-            <div class="advantages__item  advantages__item--first">
-              <b class="advantages__slogan">Поднимает настроение</b>
-              <p class="advantages__text">
-                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+        <div class="gallery__wrapper">
+          <div class="gallery__item">
+            <picture class="gallery__picture">
+              <source media="(min-width: 960px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-1-mobile@1x.jpg"
+              srcset="img/photo-1-mobile@1x.jpg 1x, img/photo-1-mobile@1x.jpg 2x"
+              title="фото-1" alt="фото-1">
+            </picture>
+            <div class="gallery__info">
+              <p class="gallery__author">
+                <b class="gallery__name">Левон</b>
+                <span class="gallery__date">(5 часов назад)</span>
               </p>
-            </div>
-            <div class="advantages__item">
-              <b class="advantages__slogan">Меняет мир вокруг</b>
-              <p class="advantages__text">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              <p class="gallery__message">
+                Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
+              <div class="gallery__like-block">
+                <a class="gallery__like" href="#">
+                  <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
+                </a>
+                <span class="gallery__like-text">нравится:</span>
+                <span class="gallery__like-count">356</span>
               </div>
-            <div class="advantages__item">
-              <b class="advantages__slogan">Заводит новых друзей</b>
-              <p class="advantages__text">
-                Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+            </div>
+          </div>
+          <div class="gallery__item">
+            <picture class="gallery__picture">
+              <source media="(min-width: 960px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-2-mobile@1x.jpg"
+              srcset="img/photo-2-mobile@1x.jpg 1x, img/photo-2-mobile@1x.jpg 2x"
+              title="фото-2" alt="фото-2">
+            </picture>
+            <div class="gallery__info">
+              <p class="gallery__author">
+                <b class="gallery__name">Антон</b>
+                <span class="gallery__date">(12 часов назад)</span>
               </p>
+              <p class="gallery__message">
+                Соседи будут рады!
+              </p>
+              <div class="gallery__like-block">
+                <a class="gallery__like" href="#">
+                  <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
+                </a>
+                <span class="gallery__like-text">нравится:</span>
+                <span class="gallery__like-count">666</span>
+              </div>
+            </div>
+            </div>
+          <div class="gallery__item">
+            <picture class="gallery__picture">
+              <source media="(min-width: 960px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-3-mobile@1x.jpg"
+              srcset="img/photo-3-mobile@1x.jpg 1x, img/photo-3-mobile@1x.jpg 2x"
+              title="фото-3" alt="фото-3">
+            </picture>
+            <div class="gallery__info">
+              <p class="gallery__author">
+                <b class="gallery__name">Борис</b>
+                <span class="gallery__date">(20 часов назад)</span>
+              </p>
+              <p class="gallery__message">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <div class="gallery__like-block">
+                <a class="gallery__like" href="#">
+                  <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
+                </a>
+                <span class="gallery__like-text">нравится:</span>
+                <span class="gallery__like-count">215</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <picture class="gallery__picture">
+              <source media="(min-width: 960px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-4-mobile@1x.jpg"
+              srcset="img/photo-4-mobile@1x.jpg 1x, img/photo-4-mobile@1x.jpg 2x"
+              title="фото-4" alt="фото-4">
+            </picture>
+            <div class="gallery__info">
+              <p class="gallery__author">
+                <b class="gallery__name">Сергей</b>
+                <span class="gallery__date">(25 часов назад)</span>
+              </p>
+              <p class="gallery__message">
+                Самая кубанская в мире!
+              </p>
+              <div class="gallery__like-block">
+                <a class="gallery__like" href="#">
+                  <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
+                </a>
+                <span class="gallery__like-text">нравится:</span>
+                <span class="gallery__like-count">4</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <picture class="gallery__picture">
+              <source media="(min-width: 960px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-5-mobile@1x.jpg"
+              srcset="img/photo-5-mobile@1x.jpg 1x, img/photo-5-mobile@1x.jpg 2x"
+              title="фото-5" alt="фото-5">
+            </picture>
+            <div class="gallery__info">
+              <p class="gallery__author">
+                <b class="gallery__name">Максим</b>
+                <span class="gallery__date">(40 часов назад)</span>
+              </p>
+              <p class="gallery__message">
+                Где снег то?
+              </p>
+              <div class="gallery__like-block">
+                <a class="gallery__like" href="#">
+                  <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
+                </a>
+                <span class="gallery__like-text">нравится:</span>
+                <span class="gallery__like-count">150</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <picture class="gallery__picture">
+              <source media="(min-width: 960px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="img/photo-6-mobile@1x.jpg"
+              srcset="img/photo-6-mobile@1x.jpg 1x, img/photo-6-mobile@1x.jpg 2x"
+              title="фото-6" alt="фото-6">
+            </picture>
+            <div class="gallery__info">
+              <p class="gallery__author">
+                <b class="gallery__name">Надежда</b>
+                <span class="gallery__date">(45 часов назад)</span>
+              </p>
+              <p class="gallery__message">
+                Всем GM и взаимные лайки!
+              </p>
+              <div class="gallery__like-block">
+                <a class="gallery__like" href="#">
+                  <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
+                </a>
+                <span class="gallery__like-text">нравится:</span>
+                <span class="gallery__like-count">2560</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="effect24">
-        <div class="effect24__wrapper">
-          <div class="effect24__clock">
-            <span class="effect24__number">24</span>
-          </div>
-          <div class="effect24__content">
-            <h2 class="effect24__header">Эффект на 24 часа!</h2>
-            <p class="effect24__text">
-              Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
-            </p>
-            <a class="effect24__anchor" href="#">Узнать больше об исследовании</a>
-          </div>
-        </div>
-      </section>
-      <section class="reviews">
-        <div class="reviews__wrapper  slider">
-          <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
-          <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
-          <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
-          <div class="slider__inner">
-            <ul class="reviews__list  slider__slides">
-              <li class="reviews__item  reviews__item--active  slider__item">
-                <b class="reviews__name">Николай Петров</b>
-                <p class="reviews__text">
-                  <span class="reviews__qq">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__qq">»</span>
-                </p>
-                <p class="reviews__signature">
-                  25 лет, водитель трамвая
-                </p>
-              </li>
-              <li class="reviews__item  slider__item">
-                <b class="reviews__name">Николай Петров</b>
-                <p class="reviews__text">
-                  <span class="reviews__qq">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__qq">»</span>
-                </p>
-                <p class="reviews__signature">
-                  25 лет, водитель трамвая
-                </p>
-              </li>
-              <li class="reviews__item  slider__item">
-                <b class="reviews__name">Николай Петров</b>
-                <p class="reviews__text">
-                  <span class="reviews__qq">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__qq">»</span>
-                </p>
-                <p class="reviews__signature">
-                  25 лет, водитель трамвая
-                </p>
-              </li>
-            </ul>
-          </div>
-          <a class="reviews__arrow" href="#"></a>
-          <a class="reviews__arrow  reviews__arrow--right" href="#"></a>
-          <div class="reviews__toggles slider__toggles">
-            <label class="reviews__toggle  reviews__toggle--1" for="reviews-input-1"></label>
-            <label class="reviews__toggle  reviews__toggle--2" for="reviews-input-2"></label>
-            <label class="reviews__toggle  reviews__toggle--3" for="reviews-input-3"></label>
-          </div>
-        </div>
-      </section>
-      <section class="price">
-        <div class="price__wrapper  slider">
-          <input class="slider__input" type="radio" name="price" id="price-input-1">
-          <input class="slider__input" type="radio" name="price" id="price-input-2" checked>
-          <input class="slider__input" type="radio" name="price" id="price-input-3">
-          <div class="slider__inner">
-            <ul class="price__list  slider__slides">
-              <li class="slider__item  price__item  price__item--left">
-                <div class="price__header  price__header--left">
-                </div>
-                <div class="price__body  price__body--left">
-                  <div class="price__row  price__row--left">
-                    <div class="price__option">
-                      Розовый фильтр
-                    </div>
-                  </div>
-                  <div class="price__row  price__row--left">
-                    <div class="price__option">
-                      Смайлики
-                    </div>
-                </div>
-                  <div class="price__row  price__row--left">
-                    <div class="price__option">
-                      Комментарии
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="slider__item  price__item">
-                <div class="price__header">
-                  <h3 class="price__title">База</h3>
-                    <span class="price__rate">1,99 USD</span>
-                </div>
-                <div class="price__body">
-                  <div class="price__row">
-                    <div class="price__attribute">
-                    Розовый фильтр
-                    </div>
-                    <div class="price__value  price__value--yes">
-                    </div>
-                  </div>
-                  <div class="price__row">
-                    <div class="price__attribute">
-                        Смайлики
-                    </div>
-                    <div class="price__value  price__value--no">
-                    </div>
-                </div>
-                  <div class="price__row">
-                    <div class="price__attribute">
-                      Комментарии
-                    </div>
-                    <div class="price__value  price__value--no">
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="slider__item  price__item">
-                <div class="price__header  price__header--hit">
-                  <h3 class="price__title">Стандарт</h3>
-                    <span class="price__rate">3,99 USD</span>
-                </div>
-                <div class="price__body">
-                  <div class="price__row">
-                    <div class="price__attribute">
-                    Розовый фильтр
-                    </div>
-                    <div class="price__value  price__value--yes">
-                    </div>
-                  </div>
-                  <div class="price__row">
-                    <div class="price__attribute">
-                        Смайлики
-                    </div>
-                    <div class="price__value  price__value--yes">
-                    </div>
-                  </div>
-                  <div class="price__row">
-                    <div class="price__attribute">
-                      Комментарии
-                    </div>
-                    <div class="price__value  price__value--no">
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="slider__item  price__item">
-                <div class="price__header  price__header">
-                  <h3 class="price__title">Анлим</h3>
-                    <span class="price__rate">9,99 USD</span>
-                </div>
-                  <div class="price__body">
-                    <div class="price__row">
-                      <div class="price__attribute">
-                      Розовый фильтр
-                      </div>
-                      <div class="price__value  price__value--yes">
-                      </div>
-                    </div>
-                    <div class="price__row">
-                      <div class="price__attribute">
-                          Смайлики
-                      </div>
-                      <div class="price__value  price__value--yes">
-                      </div>
-                    </div>
-                    <div class="price__row">
-                      <div class="price__attribute">
-                        Комментарии
-                      </div>
-                      <div class="price__value  price__value--yes">
-                    </div>
-                    </div>
-                  </div>
-              </li>
-            </ul>
-          </div>
-          <div class="price__toggles slider__toggles">
-            <label class="price__toggle  price__toggle--1" for="price-input-1"></label>
-            <label class="price__toggle  price__toggle--2" for="price-input-2"></label>
-            <label class="price__toggle  price__toggle--3" for="price-input-3"></label>
+      <p class="page-body__description  page-body__description--userpost">
+        Затмите их всех!<br>
+        Выкладывайте все, что накопилось в телефоне!
+      </p>
+      <section class="userpost">
+        <div class="userpost__wrapper">
+          <picture class="userpost__picture">
+            <source media="(min-width: 960px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+            <img class="userpost__image" src="img/photo-7-mobile@1x.jpg"
+            srcset="img/photo-7-mobile@1x.jpg 1x, img/photo-7-mobile@1x.jpg 2x"
+            title="фото-7" alt="фото-7">
+          </picture>
+          <div class="userpost__options">
+            <div class="userpost__effects-container">
+              <div class="userpost__effects-item  userpost__effects-item--crop  userpost__effects-item--active">
+                <img class="userpost__effects-icon  userpost__effects-icon--crop" src="img/icon-editor-crop.svg" width="44" height="44" alt="crop">
+              </div>
+              <div class="userpost__effects-item  userpost__effects-item--fill">
+                <img class="userpost__effects-icon  userpost__effects-icon--fill" src="img/icon-editor-fill.svg" width="44" height="44" alt="fill">
+              </div>
+              <div class="userpost__effects-item  userpost__effects-item--contrast">
+                <img class="userpost__effects-icon  userpost__effects-icon--contrast" src="img/icon-editor-contrast.svg" width="44" height="44" alt="contrast">
+              </div>
+            </div>
+            <div class="userpost__range-container">
+              <div class="userpost__range  userpost__range--crop"></div>
+              <div class="userpost__range  userpost__range--fill"></div>
+              <div class="userpost__range  userpost__range--contrast"></div>
+            </div>
+            <div class="userpost__buttons">
+              <button class="userpost__btn" type="submit">Запостить</button>
+              <button class="userpost__btn  userpost__btn--disabled" type="button" disabled>Отмена</button>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="page-footer  content-footer">
-      <section class="callback">
-        <p class="callback__title">
-          Остались вопросы?<br>
-          Свяжитесь с нами!
-        </p>
-        <div class="callback__wrapper">
-          <div class="callback__element">
-            <b class="callback__headers">Звоните:</b>
-            <a href="tel:+78125556666" class="callback__anchors">+7 (812) 555-66-66</a>
-          </div>
-          <div class="callback__element callback__element--email">
-            <b class="callback__headers">Пишите:</b>
-            <a href="mailto:mail@htmlacademy.ru" class="callback__anchors">mail@htmlacademy.ru</a>
-          </div>
-          <div class="callback__element  callback__element--adress">
-            <b class="callback__headers">Приезжайте в гости:</b>
-            <a href="#" class="callback__anchors">ул. Большая<br>Конюшенная, 19/8</a>
-          </div>
-        </div>
-      </section>
-      <div class="page-footer__map" id="map">
-      </div>
-      <div class="content-footer__wrapper  content-footer__wrapper--hidden">
+    <footer class="content-footer">
+      <div class="content-footer__wrapper">
         <a href="#" class="content-footer__logo">
           <picture class="content-footer__picture">
             <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
